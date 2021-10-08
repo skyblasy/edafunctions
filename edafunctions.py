@@ -4,12 +4,12 @@ This file is to create some easy helper function imports to assist with EDA
 
 def propna(df):
   '''simple function that gives a proportion of na values '''
-  return df.isna().sum()/len(df)
+  return df.isna().sum()/len(df);
 
 def visualna(df):
   '''create a heatmap of missing values'''
   import seaborn as sns
-  return sns.heatmap(df.isna(), cbar = False, cmap="Blues_r")
+  return sns.heatmap(df.isna(), cbar = False, cmap="Blues_r");
 
 def corheatmap(data):
 '''
@@ -34,4 +34,4 @@ Function to create a correlation matrix and heatmap
   #add the column names as labels
   ax.set_yticklabels(corr_matrix.columns, rotation = 0)
   ax.set_xticklabels(corr_matrix.columns)
-  sns.set_style({'xtick.bottom': True}, {'ytick.left': True})
+  sns.set_style({'xtick.bottom': True}, {'ytick.left': True});
