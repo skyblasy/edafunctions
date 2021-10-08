@@ -1,6 +1,5 @@
-'''
-This file is to create some easy helper function imports to assist with EDA
-'''
+# This file is to create some easy helper function imports to assist with EDA
+
 
 def propna(df):
   '''simple function that gives a proportion of na values '''
