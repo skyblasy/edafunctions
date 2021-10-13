@@ -11,6 +11,8 @@ def visualna(df):
 
 def corheatmap(data):
   '''Function to create a correlation matrix and heatmap'''
+  import seaborn as sns
+  import numpy as np
   corr_matrix = data.corr()
   mask = np.zeros_like(corr_matrix, dtype=np.bool)
   mask[np.triu_indices_from(mask)]= True
